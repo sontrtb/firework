@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-city-night{
+    width: 100vw;
+    height: 25vh;
+    max-height: 250px;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    cursor: no-drop;
+}
+
+#modal-container{
+   padding: 10px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 15px;
+    z-index: 100;
+    position: fixed;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.icon{
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.icon:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+}
