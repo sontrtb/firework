@@ -113,7 +113,7 @@ function handleCanvas(){
                 this.y,
                 random(1, this.v0),
                 random(0, 360),
-                this.color[random(0, random(0,this.color.length-1))],
+                this.color[random(0, this.color.length-1)],
                 this.ballSize
             );
             this.balls.push(ball);
@@ -182,17 +182,30 @@ function handleCanvas(){
         handleFirework(  ); 
     };
     //thêm pháo hoa tạo từ tọa độ vào mảng
+    const colors = [
+        [                                   // 3 màu
+            color[random(0, color.length)],
+            color[random(0, color.length)],
+            color[random(0, color.length)],
+        ],
+        [                                   // 2 màu
+            color[random(0, color.length)],
+            color[random(0, color.length)],
+        ],
+        [                                   // 1 màu
+            color[random(0, color.length)],
+        ],
+        [                                   // 1 màu
+            color[random(0, color.length)],
+        ]
+    ]
     function handleFirework() {
         const firework = new Firework(
             cursorX,                            // x
             calcVColBall(cursorY),              // vColBall
-            [                                   // color
-                color[random(0, color.length)],
-                color[random(0, color.length)],
-                color[random(0, color.length)],
-            ],  
+            colors[random(0, colors.length-1)], // color
             random(4, 5),                       // ballColSize
-            random(5, 15)/10,                   // ballFlowerSize
+            random(10, 15)/10,                   // ballFlowerSize
             random(6, 8)*100,                   // ballNumber
             random(35, 45)                      // v0
         )
@@ -210,7 +223,7 @@ function handleCanvas(){
                 color[random(0, color.length)]
             ],  
             random(2, 4),                       // ballColSize
-            random(5, 15)/10,                   // ballFlowerSize
+            random(7, 15)/10,                   // ballFlowerSize
             random(3, 6)*100,                   // ballNumber
             random(25, 40)                      // v0
         )
