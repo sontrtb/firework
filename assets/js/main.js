@@ -31,7 +31,7 @@ function handleCanvas(){
     const ctx = myCanvas.getContext("2d");
 
     // Khai báo
-    const g = 0.05;
+    const g = 0.04;
     const color = [ "#ff0043",
                     "#14fc56",
                     "#1e7fff",
