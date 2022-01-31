@@ -197,6 +197,9 @@ function handleCanvas(){
         ],
         [                                   // 1 màu
             color[random(0, color.length)],
+        ],
+        [                                   // 1 màu
+            color[random(0, color.length)],
         ]
     ]
     function handleFirework() {
